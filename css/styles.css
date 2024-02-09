@@ -739,7 +739,7 @@ align-items: baseline;
 border-color: #4D5AE5;
 }
 
-.form-text:focus .form-icon {
+.form-text:focus + .form-icon {
     fill: #4D5AE5;
 }
 
@@ -768,7 +768,7 @@ border-color: #4D5AE5;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 8px;
@@ -779,6 +779,7 @@ border-color: #4D5AE5;
 .form-agreement:checked + .agreement-label span {
     background-color: #404BBF;
     fill: #F4F4FD;
+    border: none;
 }
 
 .agreement-link {
