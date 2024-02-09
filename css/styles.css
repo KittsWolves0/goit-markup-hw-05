@@ -524,6 +524,230 @@ align-items: baseline;
     align-items: center;
 }
 
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.form-email {
+    border: 1px solid #fff;
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.form-email::placeholder {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #fff;
+    line-height: 2;
+}
+
+.footer-button {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background-color: #4D5AE5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.button-icon {
+    fill: #fff;
+}
 
 
 /* ================================ */
+
+
+
+/* ========MODAL====== */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    position: absolute;
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+}
+
+.modal-close {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    background-color: #E7E9FC;
+    margin-left: 336px;
+    margin-bottom: 24px;
+    fill: #2E2F42;
+}
+
+.modal-close:active {
+    background-color: #404BBF;
+    fill: #fff;
+}
+
+.modal-title {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    font-size: 16px;
+    color: #2E2F42;
+    margin-bottom: 16px;
+}
+
+.form-label {
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    color: #8E8F99;
+}
+
+.form-text {
+    display: block;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 8px 38px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.form-icon-username {
+    position: absolute;
+    top: 144px;
+    left: 43px;
+}
+
+.form-icon-phone {
+    position: absolute;
+    top: 209px;
+    left: 43px;
+}
+
+.form-icon-email {
+    position: absolute;
+    top: 276px;
+    left: 41px;
+}
+
+.form-textarea {
+    display: block;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 360px;
+    height: 120px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    resize: none;
+    margin-bottom: 16px;
+}
+
+.form-textarea::placeholder {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    line-height: 1.17;
+}
+
+.form-text:focus-within {
+border-color: #4D5AE5;
+}
+
+.modal-field {
+    margin-bottom: 24px;
+}
+
+.form-agreement {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    line-height: 1.17;
+}
+
+.agreement-label {
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    color: #8E8F99;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+}
+
+.agreement-label span {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    fill: transparent;
+}
+
+.form-agreement:checked + .agreement-label span {
+    background-color: #404BBF;
+    fill: #F4F4FD;
+}
+
+.agreement-link {
+    line-height: 133%;
+    color: #4D5AE5;
+    text-decoration: underline;
+}
+
+.form-button {
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #4D5AE5;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
